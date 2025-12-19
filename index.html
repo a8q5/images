@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AS1 Images</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+    --background-url: url('https://i.imgur.com/o4HcwfU.png');
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--background-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.overlay {
+    background: rgba(0,0,0,0.65);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.image-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+.lightbox {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.85);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index: 999;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="overlay">
+    <h1>𝙰𝚂𝟷 𝙸𝚖𝚊𝚐𝚎𝚜</h1>
+    <div class="image-grid">
+        <img src="https://i.imgur.com/pXqNZqj.png" data-full="https://i.imgur.com/pXqNZqj.png" alt="">
+        <img src="https://i.imgur.com/jEeMbIz.png" data-full="https://i.imgur.com/jEeMbIz.png" alt="">
+        <img src="https://i.imgur.com/C7mVZ7p.png" data-full="https://i.imgur.com/C7mVZ7p.png" alt="">
+        <img src="https://i.imgur.com/Z4wyCPZ.png" data-full="https://i.imgur.com/Z4wyCPZ.png" alt="">
+        <img src="https://i.imgur.com/y4Fg6wT.jpeg" data-full="https://i.imgur.com/y4Fg6wT.jpeg" alt="">
+        <img src="https://i.imgur.com/DTkVl4g.png" data-full="https://i.imgur.com/DTkVl4g.png" alt="">
+        <img src="https://i.imgur.com/NPwz4ye.png" data-full="https://i.imgur.com/NPwz4ye.png" alt="">
+        <img src="https://i.imgur.com/F0cwPCB.jpeg" data-full="https://i.imgur.com/F0cwPCB.jpeg" alt="">
+        <img src="https://i.imgur.com/MBntycb.png" data-full="https://i.imgur.com/MBntycb.png" alt="">
+        <img src="https://i.imgur.com/H4oJgKt.jpeg" data-full="https://i.imgur.com/H4oJgKt.jpeg" alt="">
+        <img src="https://i.imgur.com/A4WLKSU.png" data-full="https://i.imgur.com/A4WLKSU.png" alt="">
+        <img src="https://i.imgur.com/04o7UjH.png" data-full="https://i.imgur.com/04o7UjH.png" alt="">
+        <img src="https://i.imgur.com/GIHVChe.jpeg" data-full="https://i.imgur.com/GIHVChe.jpeg" alt="">
+        <img src="https://i.imgur.com/wG9vChq.jpeg" data-full="https://i.imgur.com/wG9vChq.jpeg" alt="">
+        <img src="https://i.imgur.com/tJqkWSF.png" data-full="https://i.imgur.com/tJqkWSF.png" alt="">
+        <img src="https://i.imgur.com/L0JWz7D.jpeg" data-full="https://i.imgur.com/L0JWz7D.jpeg" alt="">
+        <img src="https://i.imgur.com/igYBJEd.jpeg" data-full="https://i.imgur.com/igYBJEd.jpeg" alt="">
+        <img src="https://i.imgur.com/nyiV7HY.jpeg" data-full="https://i.imgur.com/nyiV7HY.jpeg" alt="">
+        <img src="https://i.imgur.com/jQEHDcI.jpeg" data-full="https://i.imgur.com/jQEHDcI.jpeg" alt="">
+        <img src="https://i.imgur.com/Z9nRHIl.jpeg" data-full="https://i.imgur.com/Z9nRHIl.jpeg" alt="">
+        <img src="https://i.imgur.com/XVPr58K.jpeg" data-full="https://i.imgur.com/XVPr58K.jpeg" alt="">
+        <img src="https://i.imgur.com/YtlSWK7.jpeg" data-full="https://i.imgur.com/YtlSWK7.jpeg" alt="">
+        <img src="https://i.imgur.com/lxZdng6.jpeg" data-full="https://i.imgur.com/lxZdng6.jpeg" alt="">
+        <img src="https://i.imgur.com/OXxyIx2.jpeg" data-full="https://i.imgur.com/OXxyIx2.jpeg" alt="">
+        <img src="https://i.imgur.com/1DWIByA.jpeg" data-full="https://i.imgur.com/1DWIByA.jpeg" alt="">
+        <img src="https://i.imgur.com/9wgQpu7.jpeg" data-full="https://i.imgur.com/9wgQpu7.jpeg" alt="">
+        <img src="https://i.imgur.com/yCUUvnL.jpeg" data-full="https://i.imgur.com/yCUUvnL.jpeg" alt="">
+        <img src="https://i.imgur.com/ZZEgdo1.jpeg" data-full="https://i.imgur.com/ZZEgdo1.jpeg" alt="">
+        <img src="https://i.imgur.com/dEvz05Z.jpeg" data-full="https://i.imgur.com/dEvz05Z.jpeg" alt="">
+        <img src="https://i.imgur.com/0w2fCL4.jpeg" data-full="https://i.imgur.com/0w2fCL4.jpeg" alt="">
+        <img src="https://i.imgur.com/paEli2K.jpeg" data-full="https://i.imgur.com/paEli2K.jpeg" alt="">
+        <img src="https://i.imgur.com/WEAcM5k.jpeg" data-full="https://i.imgur.com/WEAcM5k.jpeg" alt="">
+        <img src="https://i.imgur.com/zimnlRA.jpeg" data-full="https://i.imgur.com/zimnlRA.jpeg" alt="">
+        <img src="https://i.imgur.com/8RgGAxi.png" data-full="https://i.imgur.com/8RgGAxi.png" alt="">
+        <img src="https://i.imgur.com/a9bFqra.jpeg" data-full="https://i.imgur.com/a9bFqra.jpeg" alt="">
+    </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+const images = document.querySelectorAll('.image-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('closeBtn');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.dataset.full;
+        lightbox.style.display = 'flex';
+    });
+});
+
+function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxImg.src = "";
+}
+
+closeBtn.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox) closeLightbox();
+});
+</script>
+</body>
+</html>
